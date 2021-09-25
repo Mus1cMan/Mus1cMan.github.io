@@ -1,11 +1,12 @@
 html{
-    background-color:black;
+    background-color:rgba(0, 0, 0, 0.9);
     font-family:'Helvetica';
     font-size:22px;
     color:seashell;
-    opacity:0.5;
+    /* opacity:0.5; */
 }
 body{
+    width:100%;
     margin:0 0;
 }
 .nav{
@@ -44,8 +45,8 @@ li a{
 .page-hero-container{
     background-image: url(./resources/img-mission-background.jpg);
     height:700px;
-    width:1200px;
     background-repeat: no-repeat;
+    background-size:cover;
     display:flex;
     flex-direction: column;
     margin:0 auto;
@@ -69,7 +70,6 @@ li a{
 
 
 .main{
-    width:1000px;
     margin:0 auto;
 }
 .main-text{
@@ -89,8 +89,14 @@ img{
 }
 .images{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-container{
@@ -98,9 +104,16 @@ img{
     flex-direction: column;
     align-items:center;
 }
+
+.image-container:not(:last-child) {
+    margin-right: 4.5%;
+}
+
 .locations{
     background-image: url(./resources/img-locations-background.webp);
-    width:1200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
     height:500px;
     margin:0 auto;
     display:flex;
