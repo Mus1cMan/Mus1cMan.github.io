@@ -6,7 +6,7 @@ html{
     /* opacity:0.5; */
 }
 body{
-    width:1200px;
+    width:100%;
     margin:0 0;
 }
 .nav{
@@ -46,6 +46,7 @@ li a{
     background-image: url(./resources/img-mission-background.jpg);
     height:700px;
     background-repeat: no-repeat;
+    background-size:cover;
     display:flex;
     flex-direction: column;
     margin:0 auto;
@@ -108,15 +109,11 @@ img{
     margin-right: 4.5%;
 }
 
-.image-container.tea-image-container {
-
-}
-.image-container.coffee-image-container {
-    
-}
-
 .locations{
     background-image: url(./resources/img-locations-background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
     height:500px;
     margin:0 auto;
     display:flex;
